@@ -38,7 +38,7 @@
   
 3. install git on jenkins :sudo yum install git
 
-3. Configure jenkins
+4. Configure jenkins
     - create a job
     <img width="1280" alt="Screen Shot 2020-02-09 at 12 16 15 AM" src="https://user-images.githubusercontent.com/59787273/74097443-80ef2d00-4ad1-11ea-98cc-b17ee23474ed.png">
     - click "freestyle project"
@@ -51,6 +51,16 @@
     <img width="1280" alt="Screen Shot 2020-02-09 at 12 38 38 AM" src="https://user-images.githubusercontent.com/59787273/74097683-bc3f2b00-4ad4-11ea-9322-fbb1d28f676c.png">
     - buld project
     <img width="1280" alt="Screen Shot 2020-02-09 at 12 41 09 AM" src="https://user-images.githubusercontent.com/59787273/74097699-fdcfd600-4ad4-11ea-939f-784dedc15921.png">
+ 
+ 5. Add global credentials
+    -jenkins-> credentials ->jenkins-> global credentials-> add credentials
+    <img width="1280" alt="Screen Shot 2020-02-09 at 1 12 26 AM" src="https://user-images.githubusercontent.com/59787273/74098071-5bfeb800-4ad9-11ea-8f48-1d1b9b34ea85.png">
+    
+ 
+ 6. Configure slave jenkins
+  - jenkins -> manage jenkins -> manage node -> new node-> Node name:jenkinsSlave
+    <img width="1280" alt="Screen Shot 2020-02-09 at 12 59 52 AM" src="https://user-images.githubusercontent.com/59787273/74097915-851e4900-4ad7-11ea-8e32-59ac08f2fe64.png">
+    
   
   
   
