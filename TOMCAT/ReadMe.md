@@ -1,0 +1,1 @@
+- Create a ec2 instance and name it as TOMCAT
