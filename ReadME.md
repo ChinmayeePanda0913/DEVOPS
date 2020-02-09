@@ -1,3 +1,3 @@
 #Hello
 **How are you**
-![Alt Text](/Users/chinmayee/Documents/DEVOPS/PRACTICE/DEVOPS-Github/AWS/Build-on-JenkinsSlave02.png)
+![slave](/AWS/Build-on-JenkinsSlave02.png)
