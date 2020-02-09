@@ -22,4 +22,12 @@
   <img width="684" alt="Screen Shot 2020-02-08 at 11 13 32 PM" src="https://user-images.githubusercontent.com/59787273/74096777-d3781b80-4ac8-11ea-9eb1-cb6d6f6e3715.png">
 
   - install java :sudo yum install java-1.8.0-openjdk-devel
+  - to start jenkins : sudo service jenkins start
+  <img width="589" alt="Screen Shot 2020-02-08 at 11 59 50 PM" src="https://user-images.githubusercontent.com/59787273/74097231-52705280-4acf-11ea-9380-7bb693ceb8ac.png">
+  
+  -check jenkins if it is listening
+    open browser and type - <pubic ip>:8080
+  <img width="1280" alt="Screen Shot 2020-02-09 at 12 04 07 AM" src="https://user-images.githubusercontent.com/59787273/74097265-bbf06100-4acf-11ea-994d-b743322f27f9.png">
+  
+  
   
