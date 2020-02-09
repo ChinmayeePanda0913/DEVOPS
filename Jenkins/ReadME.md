@@ -54,12 +54,23 @@
  
  5. Add global credentials
     -jenkins-> credentials ->jenkins-> global credentials-> add credentials
+    "" for private key type vim pem file name and copy the whole pem file ""
     <img width="1280" alt="Screen Shot 2020-02-09 at 1 12 26 AM" src="https://user-images.githubusercontent.com/59787273/74098071-5bfeb800-4ad9-11ea-8f48-1d1b9b34ea85.png">
     
  
  6. Configure slave jenkins
   - jenkins -> manage jenkins -> manage node -> new node-> Node name:jenkinsSlave
     <img width="1280" alt="Screen Shot 2020-02-09 at 12 59 52 AM" src="https://user-images.githubusercontent.com/59787273/74097915-851e4900-4ad7-11ea-8e32-59ac08f2fe64.png">
+  - click on ok 
+  <img width="1280" alt="Screen Shot 2020-02-09 at 1 20 14 AM" src="https://user-images.githubusercontent.com/59787273/74098166-83a25000-4ada-11ea-8622-33fbacd4e6fa.png">
+  
+  - install java on slave machine
+  - create a directory jenkins 
+  <img width="418" alt="Screen Shot 2020-02-09 at 1 31 08 AM" src="https://user-images.githubusercontent.com/59787273/74098291-f6f89180-4adb-11ea-8b94-70897a9db45b.png">
+  - change owner to ec2-user :chown ec2-user:ec2-user jenkins
+  - build the project
+  <img width="1280" alt="Screen Shot 2020-02-09 at 1 41 18 AM" src="https://user-images.githubusercontent.com/59787273/74098397-5c00b700-4add-11ea-89c4-3043e8027cb7.png">
+  
     
   
   
