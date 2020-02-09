@@ -32,3 +32,9 @@
 - to check on browser type: <public ip of tomcat>:8080
   <img width="1280" alt="Screen Shot 2020-02-09 at 4 07 42 PM" src="https://user-images.githubusercontent.com/59787273/74110961-6f9c3400-4b56-11ea-88f8-f87bcd4ae46f.png">
 
+- to copy one file from current machine to remote machine command is: rsync <file name> <remote machine>:folder path
+	                                                              scp <file name> <remote machine>:folder path
+	ex: rsync gameoflife.war ec2-user@18.189.22.76:/usr/share/tomcat/webapps
+	
+	
+
