@@ -21,4 +21,19 @@
 
 - go to the opt folder and change the ownership to sonar from root: sudo chown -R sonar:sonar sonarqube8/
 - give the permission: sudo chmod -R 775 sonarqube8/
-- 
+- go to the linux-x86-64 folder: cd sonarqube8/bin/linux-x86-64/
+<img width="544" alt="Screen Shot 2020-02-09 at 6 49 25 PM" src="https://user-images.githubusercontent.com/59787273/74113976-1b507e80-4b6d-11ea-9f77-aaa9fd0d02d6.png">
+
+- start sonarqube : ./sonar.sh start
+- check the port (default fort is 9000) : sudo netstat -tulnp | grep LISTEN
+- go to the browser (ip of the sonarqube):9000
+ <img width="1280" alt="Screen Shot 2020-02-09 at 6 56 18 PM" src="https://user-images.githubusercontent.com/59787273/74114134-e3960680-4b6d-11ea-8558-338f19f0bb85.png">
+ 
+ - to see the code coverage on sonarqube go to jenkins-> job -> configuration -> Build -> add build-step -> add as following
+ <img width="1099" alt="Screen Shot 2020-02-09 at 7 11 40 PM" src="https://user-images.githubusercontent.com/59787273/74114585-96676400-4b70-11ea-9ee1-7db6e10d5f73.png">
+ 
+ - rebuild the project on jenkins
+ - refresh the sonarqube page to see the coverage
+ <img width="1280" alt="Screen Shot 2020-02-09 at 7 16 58 PM" src="https://user-images.githubusercontent.com/59787273/74114629-d1699780-4b70-11ea-837c-70757b89f5fd.png">
+ 
+ 
