@@ -26,4 +26,11 @@
 
 - goto jenkins -> manage jenkins -> configure system ->down the page you will find "cloud"-> add new cloud-> docker
 <img width="1280" alt="Screen Shot 2020-02-10 at 3 46 05 PM" src="https://user-images.githubusercontent.com/59787273/74193223-9de44700-4c1c-11ea-857e-d1a002a1c36f.png">
-    ->docker cloud details
+    ->docker cloud details -> now go to terminal and type : ps -ef | grep docker ->copy the "tcp:" part
+    <img width="859" alt="Screen Shot 2020-02-10 at 3 51 39 PM" src="https://user-images.githubusercontent.com/59787273/74193704-7772db80-4c1d-11ea-8424-51fbdc3d2a08.png">
+    -> paste it on Docker Host URI -> click on "Test Connection" to check the connection and fill as following
+    
+<img width="1280" alt="Screen Shot 2020-02-10 at 3 56 37 PM" src="https://user-images.githubusercontent.com/59787273/74194418-d38a2f80-4c1e-11ea-8fd8-baba37824824.png">
+<img width="872" alt="Screen Shot 2020-02-10 at 3 58 11 PM" src="https://user-images.githubusercontent.com/59787273/74194427-d8e77a00-4c1e-11ea-97f8-5d4deab31e92.png">
+<img width="1280" alt="Screen Shot 2020-02-10 at 4 00 33 PM" src="https://user-images.githubusercontent.com/59787273/74194435-db49d400-4c1e-11ea-821e-97f0c393f2c5.png">
+<img width="1280" alt="Screen Shot 2020-02-10 at 4 02 22 PM" src="https://user-images.githubusercontent.com/59787273/74194444-df75f180-4c1e-11ea-9501-feeddd0076e1.png">
