@@ -1,0 +1,3 @@
+- git install on instance: sudo yum install git
+- git clone: sudo git clone https://github.com/ChinmayeePanda0913/DEVOPS.git
+- 
