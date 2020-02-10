@@ -34,3 +34,10 @@
 <img width="872" alt="Screen Shot 2020-02-10 at 3 58 11 PM" src="https://user-images.githubusercontent.com/59787273/74194427-d8e77a00-4c1e-11ea-97f8-5d4deab31e92.png">
 <img width="1280" alt="Screen Shot 2020-02-10 at 4 00 33 PM" src="https://user-images.githubusercontent.com/59787273/74194435-db49d400-4c1e-11ea-821e-97f0c393f2c5.png">
 <img width="1280" alt="Screen Shot 2020-02-10 at 4 02 22 PM" src="https://user-images.githubusercontent.com/59787273/74194444-df75f180-4c1e-11ea-9501-feeddd0076e1.png">
+
+- now go to project -> click on the project ->configuration -> restrict the project to run on jenkins slave
+<img width="1280" alt="Screen Shot 2020-02-10 at 4 06 54 PM" src="https://user-images.githubusercontent.com/59787273/74194751-8490ca00-4c1f-11ea-8dc9-ac046fc27e4d.png">
+     -> save
+-  build the project
+<img width="1280" alt="Screen Shot 2020-02-10 at 4 12 26 PM" src="https://user-images.githubusercontent.com/59787273/74195158-434cea00-4c20-11ea-9c11-dda2440490ee.png">
+
