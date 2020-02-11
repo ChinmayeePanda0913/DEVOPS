@@ -21,6 +21,9 @@
 - come out of container : exit
 - stop and destroy the container : sudo docker stop 4be0ce1be636 && sudo docker rm 4be0ce1be636
 <img width="761" alt="Screen Shot 2020-02-11 at 8 16 09 AM" src="https://user-images.githubusercontent.com/59787273/74244347-e5afb080-4ca6-11ea-9c93-80f0f2543c87.png">
-- to do data persistant : sudo docker run -itd -p 80:80 --name mynginx -v /home/ec2-user/DEVOPS/Docker/VolumeMapping/index.html:/www/docker/index.html myngnix
+- to do data persistant : sudo docker run -itd -p 80:80 --name mynginx -v /home/ec2-user/DEVOPS/Docker/VolumeMapping/index.html:/www/data/index.html myngnix
    
-   here /home/ec2-user/DEVOPS/Docker/VolumeMapping/index.html is the local address of the file and /www/docker/index.html is the container address
+   here /home/ec2-user/DEVOPS/Docker/VolumeMapping/index.html is the local address of the file and /www/data/index.html is the container address. anything changes on container index.html will be saved in local index.html.
+   -itd stands for interactive terminal daemon mode n -p is for port
+   
+- Another way to save the changes in the container is to make the container into images(is called snapshot) :   
