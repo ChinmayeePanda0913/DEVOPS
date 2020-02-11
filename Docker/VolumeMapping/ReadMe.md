@@ -26,4 +26,4 @@
    here /home/ec2-user/DEVOPS/Docker/VolumeMapping/index.html is the local address of the file and /www/data/index.html is the container address. anything changes on container index.html will be saved in local index.html.
    -itd stands for interactive terminal daemon mode n -p is for port
    
-- Another way to save the changes in the container is to make the container into images(is called snapshot) :   
+- Another way to save the changes in the container is to make the container into images(is called snapshot) :  sudo docker commit containerName imageName
