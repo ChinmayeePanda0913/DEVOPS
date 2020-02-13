@@ -13,7 +13,11 @@ Application deployment: Make DevOps easier by automating the deployment of inter
 - check the version: ansible --version
 - To add worker machines where you want to deploy the ansible workstation, create a hosts file which has all the data about worker machines
   :vim hosts
-  
   then add the ip of the machines into the hosts as below
   <img width="339" alt="Screen Shot 2020-02-12 at 6 31 21 PM" src="https://user-images.githubusercontent.com/59787273/74390111-e3904380-4dc5-11ea-8cf8-efbf9b7ee063.png">
- -  
+- Generate private and public key using ssh: ssh-keygen
+<img width="955" alt="Screen Shot 2020-02-12 at 6 37 21 PM" src="https://user-images.githubusercontent.com/59787273/74390430-e0498780-4dc6-11ea-9c98-53a2777f25c5.png">
+
+- copy the public key from id-rsa.pub and goto the server01 instance and paste it in .ssh/authorized-key and do the same for server02 also
+- to see the available hosts :ansible -i hosts all -a "hostname" -u ec2-user
+<img width="650" alt="Screen Shot 2020-02-12 at 10 33 41 PM" src="https://user-images.githubusercontent.com/59787273/74401775-ea2fb280-4de7-11ea-858c-8f03977f3cca.png">
