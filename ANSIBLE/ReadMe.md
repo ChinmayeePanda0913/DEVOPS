@@ -21,3 +21,26 @@ Application deployment: Make DevOps easier by automating the deployment of inter
 - copy the public key from id-rsa.pub and goto the server01 instance and paste it in .ssh/authorized-key and do the same for server02 also
 - to see the available hosts :ansible -i hosts all -a "hostname" -u ec2-user
 <img width="650" alt="Screen Shot 2020-02-12 at 10 33 41 PM" src="https://user-images.githubusercontent.com/59787273/74401775-ea2fb280-4de7-11ea-858c-8f03977f3cca.png">
+
+- to see a particular node : ansible -i hosts AnsibleNode01 -a "hostname" -u ec2-user
+<img width="749" alt="Screen Shot 2020-02-12 at 10 38 25 PM" src="https://user-images.githubusercontent.com/59787273/74401967-80fc6f00-4de8-11ea-9521-1787852f5a7c.png">
+
+- To install particular software and update all worker systems, create YAML or YML file
+<img width="416" alt="Screen Shot 2020-02-12 at 10 45 00 PM" src="https://user-images.githubusercontent.com/59787273/74403387-a12e2d00-4dec-11ea-8bfa-470ca8f10fdd.png">
+
+- make sure you have index.html file in the same folder with the yml file.
+
+- to copy a file from local to remote server: scp -i /Users/Chinmayee/Downloads/Chinmayee.pem /Users/chinmayee/Documents/DEVOPS/Document/Docker/index.html ec2-user@13.58.93.71:/tmp
+<img width="937" alt="Screen Shot 2020-02-12 at 11 03 38 PM" src="https://user-images.githubusercontent.com/59787273/74403254-3a107880-4dec-11ea-9b77-402346fbb0f5.png">
+
+- deploy the ansible file: ansible-playbook -i hosts -u ec2-user httpd.yml
+<img width="908" alt="Screen Shot 2020-02-12 at 11 14 04 PM" src="https://user-images.githubusercontent.com/59787273/74403628-77293a80-4ded-11ea-83c7-0aa2f368983b.png">
+
+- Once ansible is successfully executed, all of the worker machine have httpd server running with the index.html file
+<img width="1280" alt="Screen Shot 2020-02-12 at 11 16 55 PM" src="https://user-images.githubusercontent.com/59787273/74403808-29f99880-4dee-11ea-8090-eecf73ca70e5.png">
+
+- to do the same on second machine we have to edit the yml file
+hosts= AnsibleNode01:AnsibleNode02 . or ALL
+
+- now the second server is running
+<img width="1280" alt="Screen Shot 2020-02-12 at 11 22 34 PM" src="https://user-images.githubusercontent.com/59787273/74403975-c7ed6300-4dee-11ea-8f7b-6abfbc440c9b.png">
