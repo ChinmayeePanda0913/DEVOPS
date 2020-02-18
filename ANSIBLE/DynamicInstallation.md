@@ -21,4 +21,16 @@
 - : ansible-inventory -i aws_ec2.yml --list
 <img width="696" alt="Screen Shot 2020-02-13 at 7 09 24 PM" src="https://user-images.githubusercontent.com/59787273/74492401-5e279480-4e94-11ea-96c5-120f75888f51.png">
 
--
+- :mkdir ansible
+ :cd ansible/
+ :mkdir roles
+ :ansible-galaxy init roles/httpd
+ :tree httpd
+ :ansible-galaxy init roles/commonInstallations
+ :vim roles/commonInstallations/tasks/main.yml
+ :vim commonpackages.yml
+ :ansible-playbook -i httpd.aws_ec2.yml -u ec2-user --private-keys=~/Downloads/Chinmayee.pem commonpackages.yml
+ :vim tasks/main.yml 
+ :vim httpd.yml 
+ :ansible-playbook -i httpd.aws_ec2.yml -u ec2-user --private-keys=~/Downloads/Chinmayee.pem httpd.yml
+ 
