@@ -1,3 +1,5 @@
 - git install on instance: sudo yum install git
 - git clone: sudo git clone https://github.com/ChinmayeePanda0913/DEVOPS.git
+- git version : git --version
+- initialize a repositary into git: go to the repositary and type :git init
 - 
